@@ -13,6 +13,7 @@ function initializePage() {
 	$(".likeBtn").click(likeClick);
 }
 function likeClick(e){
+	console.log("like clicked!!!!");
 	e.preventDefault(); 
-	gtag("send", "event",'like', 'click');
+	ga("send", "event",'like', 'click');
 }
